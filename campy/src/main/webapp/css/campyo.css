@@ -1,0 +1,301 @@
+
+
+ * {margin:0;padding:0;box-sizing:border-box;}
+ul, li {list-style:none;}
+
+[name="slide"] {display:none;}
+.slidebox {max-width:1600px;width:100%;margin:0 auto;text-align:center;}
+.slidebox img {max-width:100%;}
+.slidebox .slidelist {
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+.slidebox .slideitem {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .35s;
+}
+.slidebox .slideitem label {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+}
+label.left {
+    left:20px;
+    background-color:#5F5F5F;
+    background-image:url('../images/left.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+}
+label.right {
+    right:20px;
+    background-color:#5F5F5F;
+    background-image:url('../images/right.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+}
+
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:30px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+.paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+@keyframes slide01 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:-300%;}
+    98% {left:-300%;}
+    100% {left:0%;}
+}
+@keyframes slide02 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide03 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:300%;}
+    48% {left:300%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+   
+   
+   
+    /* header , footer --> iframe*/
+    iframe.h,iframe.f { 
+        overflow:hidden; border:none;
+    }
+    .footer{
+        color:gray; font-size:8pt; margin-left:5px;
+    }
+   img.header_image{
+    padding:0; margin-bottom:5px;
+    margin-left:10px; margin-top:10px;
+   }
+    ul.header_a {
+       list-style-type:none;overflow:hidden; position:fixed; right:10px;
+       margin-left:0; padding:0; display:inline-block;
+    }
+    ul.header_a li{
+         margin-right:5px;
+       float:left;
+    }
+    ul.header_a li a{text-decoration: none; color:gray; font-size:9pt; }
+    ul.header_b li a{text-decoration:none; font-size:15pt; color:black;}
+    ul.header_b{
+       clear:left;  list-style-type:none;overflow:hidden;
+       margin:0; padding:5px;  display:block; text-align:center; background-color:lightgray; 
+    }
+    ul.header_b li{
+        display:inline-block; margin-right:20px; font-weight:bold;
+    }
+    
+
+
+
+/*
+    login from
+*/
+.logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+.login {display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items : center;
+			background:white;}
+form[name="loginForm"] ul {
+        list-style-type:none;
+    }
+    .login .top li { padding:0 0 30px;}
+    .login .top li label {display: inline-block; width:90px; font-size:15px; color:black; font-family:dotum; font-weight:bold;
+                          margin:0 0 0 90px;}
+     .login .top li input[type="text"],
+     .login .top li input[type="password"] {width:200px; height:27px; padding:0; border-color:black;
+                                            border:1px solid gray; border-radius:5px;}
+     .login .top li .btn_style1 {display:inline-block; width:400px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold; 
+                                margin:0 0 0 50px; border:1px solid gray; border-radius:5px;}
+     .login .btm .btm_span .span1 {margin:0 0 0 90px;}
+     .login .btm .btm_span .span2 {margin:0 0 0 50px;}  
+     .login .btm .btm_span .span3 {margin:0 0 0 50px;}       
+     .login .btm .btm_span a{ text-decoration:none;}
+  span.login_message{
+        color:red; font-size:10pt ; display:block; text-align:center; padding:5px; margin-left:110px; margin-top:-20px;
+  }
+    
+    /*
+        join form
+    */
+    .logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+    .content {display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items : center;
+            background:white;}
+    .join { margin:30px 0 0 220px;}
+    form[name="joinForm"] ul {
+        list-style-type:none;
+    }
+    .pass_msg{font-size:9pt;}
+    .content .top li { padding:0 0 20px;}
+    .content .top li label { display:inline-block; width:150px; color:black; font-family:dotum; font-size:15px; font-weight:bold;}
+     .content .top li input {width:220px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .content .top .hp{width:64px; height:30px; padding:0; border:1px solid gray; border-radius:5px;}
+     .content .top span input { width:64px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .content .top li .btn_style1{display:inline-block; width:60px; height:35px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:gray; font-size:10px; font-weight:bold;
+                                border:1px solid gray; border-radius:5px;}
+     .content .top li .btn_join{display:inline-block; width:200px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold;
+                                margin:0 0 0 150px; border:1px solid gray; border-radius:5px;}
+     .content .top li .email1{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .content .top li .email2{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .content .top li .email3{ display:inline-block; width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .content .top li .join_message{display:block; text-align:center; margin-left:10px; margin-bottom:10px; margin-top:-10px; color:red; font-size:10pt;}
+     
+     /*
+        findId form
+    */
+    .logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+.findId {display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items : center;
+            background:white;}
+     form[name="findIdForm"] ul {
+        list-style-type:none;
+    }
+    .findId .top li { padding:0 0 30px;}
+    .findId .top li label {display: inline-block; width:90px; font-size:15px; color:black; font-family:dotum; font-weight:bold;
+                          margin:0 0 0 90px;}
+     .findId .top li input[type="text"]{width:200px; height:27px; padding:0; border-color:black;
+                                            border:1px solid gray; border-radius:5px;}
+     .findId .top li .email1{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findId .top li .email2{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findId .top li .email3{ display:inline-block; width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findId .top .btn_style1 {display:inline-block; width:100px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold; 
+                                margin:0 0 0 250px; border:1px solid gray; border-radius:5px;}
+     .findId .top span{display:block; text-align:center; margin-left:90px; margin-bottom:10px; margin-top:-20px; color:red; font-size:10pt;}                           
+                                
+      /*
+        findPass form
+    */
+     .logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+    .findPass {display: flex;
+    height: 78vh;
+    justify-content: center;
+    align-items : center;
+            background:white;}
+    form[name="findPassForm"] ul {
+        list-style-type:none;
+    }
+    .findPass .top li { padding:0 0 20px;}
+    .findPass .top li label { display:inline-block; width:150px; color:black; font-family:dotum; font-size:15px; font-weight:bold;}
+     .findPass .top li input {width:220px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .findPass .top .hp{width:64px; height:30px; padding:0; border:1px solid gray; border-radius:5px;}
+     .findPass .top span input { width:64px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .findPass .top li .btn_findPass{display:inline-block; width:100px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold;
+                                margin:0 0 0 200px; border:1px solid gray; border-radius:5px;}
+     .findPass .top li .email1{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findPass .top li .email2{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findPass .top li .email3{ display:inline-block; width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .findPass .top li .findPass_message{display:block; text-align:center; margin-left:10px; margin-bottom:10px; margin-top:-10px; color:red; font-size:10pt;}
+     
+     
+    /*
+    rsrv from
+    */
+     .logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+    .rsrv {display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items : center;
+            background:white;}
+    form[name="rsrvForm"] ul {
+        list-style-type:none;
+    }
+    .rsrv .top li { padding:0 0 20px;}
+    .rsrv .top li label { display:inline-block; width:100px; color:black; font-family:dotum; font-size:15px; font-weight:bold;}
+     .rsrv .top li input {width:100px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rsrv .top .hp{width:64px; height:30px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rsrv .top span input { width:64px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rsrv .top .btn_rsrv1{display:inline-block; width:100px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:15px; font-weight:bold;
+                                margin:0 0 0 50px; border:1px solid gray; border-radius:5px;}
+     .rsrv .top .btn_rsrv2{display:inline-block; width:100px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:15px; font-weight:bold;
+                                margin:0 0 0 50px; border:1px solid gray; border-radius:5px;}
+    span.rsrv_message{
+        color:red; font-size:10pt ; display:block; text-align:center; padding:5px; margin-right:20px; margin-top:-20px;
+  }
+     
+     
+     
+     
+     
+     
+     
+     
+     

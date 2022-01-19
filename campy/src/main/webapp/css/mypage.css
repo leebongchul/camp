@@ -1,0 +1,80 @@
+    
+    div.sidebar_menu ul {
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 500px;
+        /*border: 1px solid green;*/
+    }
+
+    div.sidebar_menu li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    div.sidebar_menu li a:hover {
+        background-color: #BCFF66;
+        color: white;
+    }
+        
+    #main_iframe {
+        /*border: 1px solid orange;*/
+        height:500px;
+        width: 80%;
+        height: 500px; 
+        border-style: none;
+        margin-left:200px;
+    }
+        
+    .logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+    
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+}
+.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  color: var(--bs-table-hover-color);
+}
+
+#pwcheck_for_update {
+	text-decoration: none;
+}
+
+.content .top li .btn_exit{display:inline-block; width:200px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold;
+                                margin:0 0 0 150px; border:1px solid gray; border-radius:5px;}
+.content .top li .exit_message{display:block; text-align:center; margin-left:10px; margin-bottom:10px; margin-top:-10px; color:red; font-size:10pt;}

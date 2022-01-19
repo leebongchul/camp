@@ -1,0 +1,22 @@
+  form.search{
+        border:1px solid red; width:50%; margin:auto; width:500px;
+        
+     }
+  form.search ul{
+    list-style-type:none; 
+   }
+   form.search ul li{
+    border:1px solid blue;
+   }
+  div.card{
+    border:1px solid blue; display:inline-block;
+  }
+  
+  div.cardlist_1, div.cardlist_2{
+    border:1px solid red;
+    margin: 10px 0 ; text-align:center;
+  }
+  
+[name="search_camp"] {
+	width:400px;
+}
