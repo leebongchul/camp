@@ -18,21 +18,21 @@
                 <button type="button">검색</button>
             </li>
             <li class="search_">
-               <input type="checkbox">전체
-               <input type="checkbox">서울
-               <input type="checkbox">경기
-               <input type="checkbox">강원
-               <input type="checkbox">충청
-               <input type="checkbox">경상
-               <input type="checkbox">전라
-               <input type="checkbox">제주
+               <input type="radio" name="" id="">전체
+               <input type="radio" name="" id="">서울
+               <input type="radio" name="" id="">경기
+               <input type="radio" name="" id="">강원
+               <input type="radio" name="" id="">충청
+               <input type="radio" name="" id="">경상
+               <input type="radio" name="" id="">전라
+               <input type="radio" name="" id="">제주
             </li>
             <li>
-                <input type="checkbox">전체
-                <input type="checkbox">캠핑
-                <input type="checkbox">글램핑
-                <input type="checkbox">카라반
-                <input type="checkbox">차박
+                <input type="radio" name="" id="">전체
+                <input type="radio" name="" id="">캠핑
+                <input type="radio" name="" id="">글램핑
+                <input type="radio" name="" id="">카라반
+                <input type="radio" name="" id="">차박
             </li>
         </ul>
    </form>

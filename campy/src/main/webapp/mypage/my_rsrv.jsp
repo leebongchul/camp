@@ -57,6 +57,18 @@
             </tr>
         </tbody>
     </table>
+            <!-- 게시판 페이징 영역 -->
+            
+                <div id="divPaging">
+                    <div>◀</div>
+                    <div><b>1</b></div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>▶</div>
+                </div>
+            
 
 
     <!-- 게시판 메인 페이지 영역 시작 -->

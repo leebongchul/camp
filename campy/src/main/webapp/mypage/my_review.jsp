@@ -13,7 +13,6 @@
 
     <table class="table table-hover">
         <thead>
-            <tr>내가 쓴 총 리뷰 N개</tr>
             <tr>
                 <th>리뷰</th>
                 <th>등록일</th>
@@ -38,19 +37,20 @@
             </tr>
         </tbody>
     </table>
-    
-    <a href="#" class="btn">리뷰삭제</a>
-    
+            <!-- 게시판 페이징 영역 -->
+            
+                <div id="divPaging">
+                    <div>◀</div>
+                    <div><b>1</b></div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>▶</div>
+                </div>
+            
     <hr/>
     
-    <div class="text-center">
-        <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-        </ul>
-    </div>
-
     <!-- 게시판 메인 페이지 영역 시작 -->
     <!-- <div class="container">
         <div class="row">
