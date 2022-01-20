@@ -46,8 +46,18 @@ public class noticeDAO extends DBconn {
                 dto.setNotice_updatedate(rs.getString(7));
                 list.add(dto);
             }
+            close();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i).getNotice_num());
+            System.out.println(list.get(i).getNotice_tittle());
+            System.out.println(list.get(i).getNotice_content());
+            System.out.println(list.get(i).getNotice_writer());
+            System.out.println(list.get(i).getNotice_regdate());
+            System.out.println(list.get(i).getNotice_updater());
+            System.out.println(list.get(i).getNotice_updatedate());
         }
 
         return list;
