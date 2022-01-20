@@ -1,5 +1,7 @@
 package com.camp.dao;
 
+import java.util.ArrayList;
+
 import com.camp.dto.memberDTO;
 
 public class memberDAO extends DBconn {
@@ -53,6 +55,29 @@ public class memberDAO extends DBconn {
 
         return result;
 
+    }
+
+    public ArrayList<memberDTO> idCheck() {
+        ArrayList<memberDTO> list = new ArrayList<memberDTO>();
+
+        String sql = "select user_id from member";
+        getPreparedStatement(sql);
+
+        try {
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                memberDTO dto = new memberDTO();
+                dto.setUser_id(rs.getString(1));
+                list.add(dto);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        for (int i = 0; i < list.size(); i++) {
+//
+//            System.out.println(list.get(i).getUser_id());
+//        }
+        return list;
     }
 
     public int getPassCheck() {
