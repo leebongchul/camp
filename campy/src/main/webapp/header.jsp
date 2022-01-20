@@ -24,11 +24,11 @@
                 </ul>
             </nav>
             <% }else{ %>
-              <nav>             
+              <nav>
                 <ul class="header_a">
                     <li><a href="#"><%= lid %>님!!</a></li>
                     <li><a href="login/logout.jsp" target="_parent">로그아웃</a></li>
-                    <li><a href="mypage/mypage.jsp" target="_parent">마이페이지</a></li>  
+                    <li><a href="mypage/mypage.jsp" target="_parent">마이페이지</a></li>
                     <% } %>
                 </ul>
             </nav>
