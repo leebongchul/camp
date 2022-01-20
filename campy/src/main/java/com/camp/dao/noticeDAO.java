@@ -30,7 +30,7 @@ public class noticeDAO extends DBconn {
 
     public ArrayList<noticeDTO> noticSelect() {
         ArrayList<noticeDTO> list = new ArrayList<noticeDTO>();
-        String sql = "select * from notice";
+        String sql = "select * from notice order by notice_num desc";
         getPreparedStatement(sql);
         try {
             rs = pstmt.executeQuery();
