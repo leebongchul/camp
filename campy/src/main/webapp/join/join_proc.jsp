@@ -12,9 +12,10 @@
     
     if(result == 1){
         //System.out.println("회원가입 성공");
-        response.sendRedirect("../login/login.jsp?join_result=succ");
+        response.sendRedirect("../join/join.jsp?join_result=succ");
+        response.sendRedirect("../login.jsp");
     }else{
-        System.out.println("회원가입 실패");
+        response.sendRedirect("../join/join.jsp?join_result=fail");
     }   
 %>
 
