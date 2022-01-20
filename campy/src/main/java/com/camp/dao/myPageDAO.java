@@ -59,13 +59,13 @@ public class myPageDAO extends DBconn {
     }
 
     // 문자열 자르기
-    private String subStr(String str, int sindex) {
+    public String subStr(String str, int sindex) {
         String result = str.substring(sindex);
 
         return result;
     }
 
-    private String subStr(String str, int sindex, int eindex) {
+    public String subStr(String str, int sindex, int eindex) {
         String result = str.substring(sindex, eindex);
 
         return result;

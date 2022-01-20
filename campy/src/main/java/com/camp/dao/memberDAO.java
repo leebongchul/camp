@@ -81,10 +81,28 @@ public class memberDAO extends DBconn {
         return list;
     }
 
-    public int getPassCheck() {
+    public int getPassCheck(memberDTO dto) {
         int result = 0;
-        String sql = "select count(*) from member where user_id = ?" + "and user_tel = ?" + "" + " and user_email = ?";
+        String sql = "select count(*) from member where user_id = ? and user_name = ? and user_tel = ? and user_email = ?";
+        getPreparedStatement(sql);
 
+        String tel = dto.getHp1() + dto.getHp2() + dto.getHp3();
+        String email = dto.getEmail1() + "@" + dto.getEmail2();
+        dto.setUser_tel(tel);
+        dto.setUser_email(email);
+
+        try {
+            pstmt.setString(1, dto.getUser_id());
+            pstmt.setString(2, dto.getUser_name());
+            pstmt.setString(3, dto.getUser_tel());
+            pstmt.setString(4, dto.getUser_email());
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                result = rs.getInt(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return result;
     }
 
