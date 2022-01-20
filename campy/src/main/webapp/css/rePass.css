@@ -1,0 +1,27 @@
+.repass_name {
+	text-align:center; margin-bottom:15px; font-size:15pt;
+}
+
+
+.rePass{
+ display: flex;
+    height: 78vh;
+    justify-content: center;
+    align-items : center;
+    background:white;
+}
+
+ .rePass .top li { padding:0 0 20px;}
+    .rePass .top li label { display:inline-block; width:150px; color:black; font-family:dotum; font-size:15px; font-weight:bold;}
+     .rePass .top li input {width:220px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rePass .top .hp{width:64px; height:30px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rePass .top span input { width:64px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+     .rePass .top li .btn_rePass{display:inline-block; width:100px; height:50px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold;
+                                margin:0 0 0 200px; border:1px solid gray; border-radius:5px;}
+     .rePass .top li .email1{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .rePass .top li .email2{ width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .rePass .top li .email3{ display:inline-block; width:100px; height:27px; border:1px solid gray; border-radius:5px;}
+     .rePass .top li .rePass_message{display:block; text-align:center; margin-left:10px; margin-bottom:10px; margin-top:-10px; color:red; font-size:10pt;}
+     
+     
