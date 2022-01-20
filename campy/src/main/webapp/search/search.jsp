@@ -41,25 +41,25 @@
         <span>리뷰순</span>
         </div>
         <div class="cardlist_1">
-	        <div class="card">
+	        <div class="camp1">
 	            <div class="card_image">
 	                <img alt="card_image" src="">
 	            </div>
 	            <div class="card_content">
-	                <span>지역/유형</span>
-	                <p>캠핑장명</p>
+	                <span>강원/차박</span>
+	                <p>백두산캠핑장</p>
 	            </div>
 	        </div>
-	         <div class="card">
+	         <div class="camp2">
 	            <div class="card_image">
 	                <img alt="card_image" src="">
 	            </div>
 	            <div class="card_content">
-	                <span>지역/유형</span>
-	                <p>캠핑장명</p>
+	                <span>제주/글램핑</span>
+	                <p>한라산캠핑장</p>
 	            </div>
 	        </div>
-	         <div class="card">
+	         <div class="camp3">
 	            <div class="card_image">
 	                <img alt="card_image" src="">
 	            </div>
@@ -70,7 +70,7 @@
 	        </div>
         </div>
         <div class="cardlist_2">
-            <div class="card">
+            <div class="camp4">
                 <div class="card_image">
                     <img alt="card_image" src="">
                 </div>
@@ -79,7 +79,7 @@
                     <p>캠핑장명</p>
                 </div>
             </div>
-             <div class="card">
+             <div class="camp5">
                 <div class="card_image">
                     <img alt="card_image" src="">
                 </div>
@@ -88,7 +88,7 @@
                     <p>캠핑장명</p>
                 </div>
             </div>
-             <div class="card">
+             <div class="camp6">
                 <div class="card_image">
                     <img alt="card_image" src="">
                 </div>

@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Canvas</title>
 <link href="../css/notice_list.css" rel="stylesheet">
+<link href="../css/campyo.css" rel="stylesheet">
 <script src="js/camp.js"></script>
 </head>
 <body>
