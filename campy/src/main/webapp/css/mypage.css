@@ -74,7 +74,25 @@
 	text-decoration: none;
 }
 
-.content .top li .btn_exit{display:inline-block; width:200px; height:50px;
-                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:25px; font-weight:bold;
-                                margin:0 0 0 150px; border:1px solid gray; border-radius:5px;}
-.content .top li .exit_message{display:block; text-align:center; margin-left:10px; margin-bottom:10px; margin-top:-10px; color:red; font-size:10pt;}
+.logo_name{display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:100px; font-family:dotum;}
+    .content {display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items : center;
+            background:white;}
+    .join { margin:30px 0 0 220px;}
+    form[name="exitForm"] ul {
+        list-style-type:none;
+    }
+    .content .top li { padding:0 0 20px;}
+    .content .top li label { display:inline-block; width:150px; color:black; font-family:dotum; font-size:15px; font-weight:bold;}
+     .content .top li input {width:220px; height:27px; padding:0; border:1px solid gray; border-radius:5px;}
+
+.content .top .btn_exit{display:inline-block; width:80px; height:35px;
+                                background:#BCFF66; text-align:center; font-family:dotum; color:white; font-size:15px; font-weight:bold;
+                                border:1px solid gray; border-radius:5px; margin-left:220px; margin-top:5px;}
+.content .top span{color:red; font-size:10pt ; display:block; text-align:center; padding:5px; margin-left:140px; margin-top:-10px;}
