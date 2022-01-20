@@ -1,14 +1,14 @@
 package com.camp.dto;
 
 public class noticeDTO {
-    int notice_num;
-    String notice_tittle, notice_content, notice_writer, notice_regdate, notice_updater, notice_updatedate;
 
-    public int getNotice_num() {
+    String notice_num, notice_tittle, notice_content, notice_writer, notice_regdate, notice_updater, notice_updatedate;
+
+    public String getNotice_num() {
         return notice_num;
     }
 
-    public void setNotice_num(int notice_num) {
+    public void setNotice_num(String notice_num) {
         this.notice_num = notice_num;
     }
 
