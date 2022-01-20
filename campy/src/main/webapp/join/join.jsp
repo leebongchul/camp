@@ -1,8 +1,19 @@
+<%@page import="com.camp.dao.memberDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import = "com.camp.dto.memberDTO, java.util.ArrayList"%>
     
 <% 
     String join_result = request.getParameter("join_result");
+    memberDAO dao = new memberDAO();
+    ArrayList<memberDTO> id_list = dao.idCheck();
+    StringBuffer id_values = new StringBuffer();
+    for(int i=0; i<id_list.size(); i++) {
+        if(id_values.length()>0) {
+            id_values.append(',');
+        }
+        id_values.append('"').append(id_list.get(i).getUser_id()).append('"');   
+    }
 %>
 
 <!DOCTYPE html>
@@ -23,7 +34,7 @@
                     <li>
                         <label>아이디*</label>
                         <input name="user_id" type="text" id="id">
-                        <button type="button" class="btn_style1" onclick="">중복확인</button>
+                        <button type="button" class="btn_style1" id="idcheckcnt" onclick="id_overlap_check()">중복확인</button>
                     </li>
                     <li>   
                         <label>비밀번호*</label>
@@ -73,6 +84,33 @@
 <iframe class="f" src="../footer.jsp" scrolling="no" width="100%" height="50"></iframe>
 <script src="../js/camp.js"></script>
 <script>
+function id_overlap_check(){
+    var id = document.getElementById("id").value;
+    var idcheckcnt = document.getElementById("idcheckcnt");
+    
+    var flag = true;
+    var list = [ <%=id_values.toString()%>];
+    //아이디 입력 여부
+    if(id=="") {
+        alert("아이디를 입력해주세요.");
+        //return;
+    }
+    for(var i=0; i<list.length; i++) {
+        if(id==list[i]){
+            flag = false;
+            break;
+        }
+    }
+    if(flag){
+        idcheckcnt.value = 1;
+        alert("사용 가능한 아이디 입니다.");
+        
+    }else{
+        idcheckcnt.value = 0;
+        alert("중복된 아이디 입니다.");
+        
+    }
+}
 if('<%=join_result%>' == 'fail'){
     alert("회원가입실패");
 }

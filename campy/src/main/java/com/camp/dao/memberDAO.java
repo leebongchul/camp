@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.camp.dto.memberDTO;
 
 public class memberDAO extends DBconn {
+    //
     public int insert(memberDTO dto) {
         int result = 0;
         String sql = "insert into member values(?,?,?,?,?,sysdate,?)";
@@ -28,6 +29,28 @@ public class memberDAO extends DBconn {
             e.printStackTrace();
         }
         System.out.println(result);
+        return result;
+    }
+
+    // 로그인
+    public int getLoginResult(memberDTO dto) {
+
+        int result = 0;
+        String sql = "select count(*) from member where user_id= ? and user_pass= ? and USER_EXITYN = ?";
+        getPreparedStatement(sql);
+        try {
+
+            pstmt.setString(1, dto.getUser_id());
+            pstmt.setString(2, dto.getUser_pass());
+            pstmt.setString(3, "y");
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                result = rs.getInt(1);
+            }
+            close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return result;
     }
 
@@ -74,13 +97,14 @@ public class memberDAO extends DBconn {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        for (int i = 0; i < list.size(); i++) {
-//
-//            System.out.println(list.get(i).getUser_id());
-//        }
+        for (int i = 0; i < list.size(); i++) {
+
+            System.out.println(list.get(i).getUser_id());
+        }
         return list;
     }
 
+    // 비밀번호 수정전 정보 체크
     public int getPassCheck(memberDTO dto) {
         int result = 0;
         String sql = "select count(*) from member where user_id = ? and user_name = ? and user_tel = ? and user_email = ?";
@@ -106,25 +130,4 @@ public class memberDAO extends DBconn {
         return result;
     }
 
-    // 로그인
-    public int getLoginResult(memberDTO dto) {
-
-        int result = 0;
-        String sql = "select count(*) from member where user_id= ? and user_pass= ? and USER_EXITYN = ?";
-        getPreparedStatement(sql);
-        try {
-
-            pstmt.setString(1, dto.getUser_id());
-            pstmt.setString(2, dto.getUser_pass());
-            pstmt.setString(3, "y");
-            rs = pstmt.executeQuery();
-            while (rs.next()) {
-                result = rs.getInt(1);
-            }
-            close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
 }

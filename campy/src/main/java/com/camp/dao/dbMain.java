@@ -28,7 +28,7 @@ public class dbMain {
 //        dto.setUser_name("김시아");
 //        String result = dao.getIdFind(dto);
 //        System.out.println(result);
-        mdao.memberDelete(dto);
+        dao.idCheck();
 //        for (int i = 0; i < list.size(); i++) {
 //
 //            System.out.println(list.get(i).getUser_id());
