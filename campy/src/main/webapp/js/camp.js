@@ -124,6 +124,8 @@ function findIdFormCheck(){
     }else if(email2.value==""){
         document.getElementById("findId_message").innerHTML="이메일주소를 입력해주세요";
         email2.focus();
+    }else{
+        findIdForm.submit();
     }
 }
 
