@@ -8,7 +8,7 @@
 
 <%
 
-    String user_id= (String)session.getAttribute("user_id"); 
+    String user_id= (String)session.getAttribute("user_id");
     String user_pass = request.getParameter("user_pass");
 
 
@@ -19,8 +19,6 @@
     if(result == 1){
         //System.out.println("성공");
         session.invalidate();
-    %>
-<%
         response.sendRedirect("../main.jsp");
 %>
     }else{

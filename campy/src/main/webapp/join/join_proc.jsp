@@ -13,7 +13,7 @@
     if(result == 1){
         //System.out.println("회원가입 성공");
         response.sendRedirect("../join/join.jsp?join_result=succ");
-        response.sendRedirect("../login.jsp");
+        
     }else{
         response.sendRedirect("../join/join.jsp?join_result=fail");
     }   
