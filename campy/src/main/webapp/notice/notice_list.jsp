@@ -19,7 +19,6 @@
 
             <!-- 게시판 목록  -->
             <li>
-                Table
                 <ul id ="ulTable">
                     <li>
                         <ul>
