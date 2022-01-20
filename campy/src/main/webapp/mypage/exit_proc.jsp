@@ -42,7 +42,6 @@
         } 
     
 }else{
-System.out.println("아이디다름");
 %>
     <script>
       alert("로그인 아이디와 다릅니다.")
