@@ -19,10 +19,10 @@ public class dbMain {
         // System.out.println(result);
         String email = "kimsia0717@naver.com";
         int atidx = email.indexOf("@");
-        String result1 = dao.subStr(email, 0, atidx);
-        String result2 = dao.subStr(email, atidx + 1);
-        System.out.println(result1);
-        System.out.println(result2);
+//        String result1 = dao.subStr(email, 0, atidx);
+//        String result2 = dao.subStr(email, atidx + 1);
+//        System.out.println(result1);
+//        System.out.println(result2);
     }
 
 }
