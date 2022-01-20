@@ -14,8 +14,5 @@ function exitFormCheck(){
         return false;
     }else if(confirm("정말 탈퇴하시겠습니까 ?") == true){
         exitForm.submit();
-        alert("탈퇴되었습니다");
-    }else{
-        return;
     }
 }

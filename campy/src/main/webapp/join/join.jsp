@@ -12,7 +12,7 @@
         if(id_values.length()>0) {
             id_values.append(',');
         }
-        id_values.append('"').append(id_list.get(i).getUser_id()).append('"');   
+        id_values.append('"').append(id_list.get(i).getUser_id()).append('"');
     }
 %>
 
