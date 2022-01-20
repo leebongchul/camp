@@ -27,7 +27,30 @@
     </div>
     
     <div class="report_2" id="report_2">
-         캠핑용품 준비리스트
+           <h2>1.텐트</h2>
+         <img alt="camplist" src="../images/1.png" width="70%" height="600px">
+         <h2>2.그라운드시트(방수포)</h2>
+         <img alt="camplist" src="../images/2.png" width="70%" height="600px">
+         <h2>3.기본 이너매트</h2>
+         <img alt="camplist" src="../images/3.png" width="70%" height="600px">
+         <h2>4.캠핑용 테이블&의자</h2>
+         <img alt="camplist" src="../images/4.png" width="70%" height="600px">
+         <h2>5.버너</h2>
+         <img alt="camplist" src="../images/5.png" width="70%" height="600px">
+         <h2>6.코펠</h2>
+         <img alt="camplist" src="../images/6.png" width="70%" height="600px">
+         <h2>7.침낭</h2>
+         <img alt="camplist" src="../images/7.png" width="70%" height="600px">
+         <h2>8.전기장판</h2>
+         <img alt="camplist" src="../images/8.png" width="70%" height="600px">
+         <h2>9.랜턴</h2>
+         <img alt="camplist" src="../images/9.png" width="70%" height="600px">
+         <h2>10.릴선</h2>
+         <img alt="camplist" src="../images/10.png" width="70%" height="600px">
+         <h2>11.아이스박스</h2>
+         <img alt="camplist" src="../images/11.png" width="70%" height="600px">
+         <h2>12.타프</h2>
+         <img alt="camplist" src="../images/12.png" width="70%" height="600px">
     </div>
 </div>
 
