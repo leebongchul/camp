@@ -18,7 +18,7 @@
     <ul>
         <li><a href="notice_list.jsp" target="frame_target">공지사항</a></li>
         <li><a href="qna_list.jsp" target="frame_target">Q & A</a></li>
-        <li><a href="help_list.jsp" target="frame_target">도움말</a></li>
+        <li><a href="newnew.jsp" target="frame_target">도움말</a></li>
     </ul>
     </div>
     
