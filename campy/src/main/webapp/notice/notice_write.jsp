@@ -10,13 +10,13 @@
 </head>
 <body>
 	<!-- header start -->
-    <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="90"></iframe>
+    <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="100"></iframe>
 
 	
 	<div class="content">
 		<section class="login">
 			<h1>게시판</h1>
-			<form name="notice_Form" action="" method="post"> <!-- 액션 추가필요   -->
+			<form name="notice_Form" action="notice_write_proc.jsp" method="post"> 
 				<table class="notice_write">
 					<tr>					
 						<th>제목</th>
