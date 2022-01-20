@@ -7,10 +7,9 @@
 <jsp:setProperty name="vo" property="*" />
 
 <%
-	noticeDAO dao = new noticeDAO();
-	int result = dao.Insert(dto);
-	if(result == 1){
-		response.sendRedirect("notice_list.jsp");
-	}
+    noticeDAO dao = new noticeDAO();
+    int result = dao.Insert(dto);
+    if(result == 1){
+        response.sendRedirect("notice_list.jsp");
+    }
 %>    
-
