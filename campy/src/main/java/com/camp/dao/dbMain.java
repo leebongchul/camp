@@ -8,7 +8,7 @@ public class dbMain {
 
         memberDTO dto = new memberDTO();
         memberDAO dao = new memberDAO();
-
+        myPageDAO mdao = new myPageDAO();
 //        dto.setUser_id("bong123");
 //        dto.setUser_pass("@1234567");
 //        dto.setUser_name("리봉철");
@@ -28,7 +28,7 @@ public class dbMain {
 //        dto.setUser_name("김시아");
 //        String result = dao.getIdFind(dto);
 //        System.out.println(result);
-
+        mdao.memberDelete(dto);
 //        for (int i = 0; i < list.size(); i++) {
 //
 //            System.out.println(list.get(i).getUser_id());

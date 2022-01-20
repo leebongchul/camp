@@ -14,6 +14,7 @@
         //System.out.println("회원가입 성공");
         response.sendRedirect("../login/login.jsp?join_result=succ");
     }else{
+        
         System.out.println("회원가입 실패");
     }   
 %>

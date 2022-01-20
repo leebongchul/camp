@@ -27,6 +27,7 @@ public class memberDAO extends DBconn {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println(result);
         return result;
     }
 
