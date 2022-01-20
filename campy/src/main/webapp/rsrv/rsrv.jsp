@@ -54,7 +54,7 @@
                     <li>
                         <span class="rsrv_message" id="rsrv_message"></span>
                         <button type="button" onclick="rsrvFormCheck()" class="btn_rsrv1">예약하기</button>
-                        <button type="button" onclick="rsrvFormCheck()" class="btn_rsrv2">뒤로가기</button>
+                        <button type="reset" onclick="rsrvFormCheck()" class="btn_rsrv2">뒤로가기</button>
                     </li>
                 </ul>
             </form>

@@ -130,7 +130,7 @@ function findIdFormCheck(){
 }
 
 function findPassFormCheck(){
-    let name, id, hp2, hp3, email;
+    let name, id, hp2, hp3, email1, email2;
     name=document.getElementById("name");
     id=document.getElementById("id");
     hp2=document.getElementById("hp2");
@@ -156,6 +156,8 @@ function findPassFormCheck(){
     }else if(email2.value==""){
         document.getElementById("findPass_message").innerHTML="이메일주소를 입력해주세요";
         email2.focus();
+    }else{
+        findPassForm.submit();
     }
 }
 

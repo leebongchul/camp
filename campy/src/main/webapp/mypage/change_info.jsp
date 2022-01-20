@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import = "com.camp.dto.memberDTO, java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>

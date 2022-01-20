@@ -9,7 +9,7 @@
 <script src="js/camp.js"></script>
 </head>
 <body>
-    <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="90"></iframe>
+    <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="100"></iframe>
 
     <div id="mainWrapper">
 
@@ -19,7 +19,6 @@
 
             <!-- 게시판 목록  -->
             <li>
-                Table
                 <ul id ="ulTable">
                     <li>
                         <ul>
