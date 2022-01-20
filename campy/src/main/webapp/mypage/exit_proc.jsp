@@ -12,8 +12,21 @@
     
     if(result == 1){
         //System.out.println("성공");
-        response.sendRedirect("../main.jsp");
+        session.invalidate();
+    %>
+    <br><br>
+        <b><font size="4" color="gray">회원정보가 삭제되었습니다.</font></b>
+        <br><br><br>
+    
+        <input type="button" value="확인" onclick="../main.jsp'">
+    
+    <%  
     }else{
-        System.out.println("회원탈퇴 실패");
-    }   
+    %>
+        <script>
+            alert("비밀번호가 맞지 않습니다.");
+            history.go(-1);
+        </script>
+    <%
+        } 
 %>
