@@ -1,17 +1,17 @@
   body{
         line-height:2em;        
-        font-family:"맑은 고딕";
+        
 }
     ul, li{ 
         list-style:none;
-        text-align:center;
-        padding:0;
-        margin:0;
+        text-align:right;
+        padding:100;
+        margin:5000;
 }
 
     #mainWrapper{
         width: 800px;
-        margin: 0 auto; /*가운데 정렬*/
+        margin: 0 auto; /*媛��슫�뜲 �젙�젹*/
     }
 
     #mainWrapper > ul > li:first-child {
@@ -44,11 +44,11 @@
         vertical-align:baseline;
 }    
 
-    #ulTable > li > ul > li:first-child               {width:10%;} /*ㄴ넘버  열 크기*/
-    #ulTable > li > ul > li:first-child +li           {width:45%;} /*제목 열 크기*/
-    #ulTable > li > ul > li:first-child +li+li        {width:20%;} /*작성일 열 크기*/
-    #ulTable > li > ul > li:first-child +li+li+li     {width:15%;} /*작성자 열 크기*/
-    #ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} /*조회수 열 크기*/
+    #ulTable > li > ul > li:first-child               {width:10%;} /*�꽩�꽆踰�  �뿴 �겕湲�*/
+    #ulTable > li > ul > li:first-child +li           {width:45%;} /*�젣紐� �뿴 �겕湲�*/
+    #ulTable > li > ul > li:first-child +li+li        {width:20%;} /*�옉�꽦�씪 �뿴 �겕湲�*/
+    #ulTable > li > ul > li:first-child +li+li+li     {width:15%;} /*�옉�꽦�옄 �뿴 �겕湲�*/
+    #ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} /*議고쉶�닔 �뿴 �겕湲�*/
 
     #divPaging {
           clear:both; 
