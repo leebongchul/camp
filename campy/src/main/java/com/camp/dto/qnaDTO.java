@@ -1,23 +1,15 @@
 package com.camp.dto;
 
 public class qnaDTO {
-    int qna_num, qna_hitnum;
-    String qna_tittle, qna_content, qna_write, qna_regdate, qna_updater, qna_updatedate;
 
-    public int getQna_num() {
+    String qna_num, qna_tittle, qna_content, qna_hitnum, qna_writer, qna_regdate, qna_updater, qna_updatedate;
+
+    public String getQna_num() {
         return qna_num;
     }
 
-    public void setQna_num(int qna_num) {
+    public void setQna_num(String qna_num) {
         this.qna_num = qna_num;
-    }
-
-    public int getQna_hitnum() {
-        return qna_hitnum;
-    }
-
-    public void setQna_hitnum(int qna_hitnum) {
-        this.qna_hitnum = qna_hitnum;
     }
 
     public String getQna_tittle() {
@@ -36,12 +28,20 @@ public class qnaDTO {
         this.qna_content = qna_content;
     }
 
-    public String getQna_write() {
-        return qna_write;
+    public String getQna_hitnum() {
+        return qna_hitnum;
     }
 
-    public void setQna_write(String qna_write) {
-        this.qna_write = qna_write;
+    public void setQna_hitnum(String qna_hitnum) {
+        this.qna_hitnum = qna_hitnum;
+    }
+
+    public String getQna_writer() {
+        return qna_writer;
+    }
+
+    public void setQna_writer(String qna_writer) {
+        this.qna_writer = qna_writer;
     }
 
     public String getQna_regdate() {
