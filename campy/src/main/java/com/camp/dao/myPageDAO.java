@@ -8,7 +8,6 @@ public class myPageDAO extends DBconn {
 
     // 회원탈퇴
     public int memberDelete(memberDTO dto) {
-        System.out.println("memberDelete작동");
         int result = 0;
         String sql = "update member set USER_EXITYN = 'n' where USER_ID = ? and USER_PASS = ? ";
         getPreparedStatement(sql);
@@ -21,7 +20,6 @@ public class myPageDAO extends DBconn {
             e.printStackTrace();
         }
         return result;
-
     }
 
     // 마이페이지정보
@@ -61,13 +59,13 @@ public class myPageDAO extends DBconn {
     }
 
     // 문자열 자르기
-    private String subStr(String str, int sindex) {
+    public String subStr(String str, int sindex) {
         String result = str.substring(sindex);
 
         return result;
     }
 
-    private String subStr(String str, int sindex, int eindex) {
+    public String subStr(String str, int sindex, int eindex) {
         String result = str.substring(sindex, eindex);
 
         return result;
