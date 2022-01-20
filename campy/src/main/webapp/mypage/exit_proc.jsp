@@ -19,12 +19,10 @@
    // String user_pass = request.getParameter("user_pass");
     
    if(id.equals(user_id)){
-	   System.out.println("아이디같음");
     myPageDAO dao = new myPageDAO();
     int result = dao.memberDelete(dto);
     
     if(result == 1){
-        System.out.println("성공");
         session.invalidate();
         //response.sendRedirect("../main.jsp");
     %>
