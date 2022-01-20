@@ -10,14 +10,13 @@
 <script src="js/camp.js"></script>
 </head>
 <body>
-    <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="100"></iframe>
 
     <div id="mainWrapper">
  						<a href="notice_write.jsp"><button type="button" class="btn_style3">글쓰기</button></a>
  
         <ul>
             <!-- 게시판 제목  -->
-            <li>게시판 Title </li>
+            <li>공지사항</li>
 
             <!-- 게시판 목록  -->
             <li>
@@ -102,6 +101,5 @@
 
         </ul>
     </div>
-        <iframe class="f" src="../footer.jsp" scrolling="no" width="100%" height="50"></iframe>
 </body>
 </html>
