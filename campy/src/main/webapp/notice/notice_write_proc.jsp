@@ -2,12 +2,6 @@
     pageEncoding="UTF-8"
     import = "com.camp.dto.noticeDTO, com.camp.dao.noticeDAO" %>
 
-<%
-	String sid = (String)session.getAttribute("sid");
-	if(sid != null && sid.equals("admin")){
-%> 
-
-
 <% request.setCharacterEncoding("utf-8"); %>
 <jsp:useBean id="dto"  class="com.camp.dto.noticeDTO"></jsp:useBean>
 <jsp:setProperty name="vo" property="*" />

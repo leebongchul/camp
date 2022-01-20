@@ -27,31 +27,31 @@
         <tbody>
             <tr>
                 <th></th>
-                <th>고슴</th>
-                <th>도치</th>
+                <th>(캠핑장)</th>
+                <th>(객실)</th>
                 <th>21-01-10</th>
                 <th>4</th>
-                <th>김향례</th>
+                <th>(예약자명)</th>
                 <th>010-0000-0000</th>
                 <th><input type='button' value='리뷰등록'></th>
             </tr>
             <tr>
                 <th></th>
-                <th>흰수염</th>
-                <th>해적단</th>
+                <th>(캠핑장)</th>
+                <th>(객실)</th>
                 <th>21-01-20</th>
                 <th>4</th>
-                <th>황춘배</th>
+                <th>(예약자명)</th>
                 <th>010-0000-0000</th>
                 <th><input type='button' value='예약취소'></th>
             </tr>
             <tr>
                 <th></th>
-                <th>HTML</th>
-                <th>javascript</th>
+                <th>(캠핑장)</th>
+                <th>(객실)</th>
                 <th>21-01-30</th>
                 <th>4</th>
-                <th>ajax</th>
+                <th>(예약자명)</th>
                 <th>010-0000-0000</th>
                 <th><input type='button' value='예약취소'></th>
             </tr>
