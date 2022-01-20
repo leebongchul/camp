@@ -12,16 +12,16 @@
 <iframe class="h" src="../header.jsp" scrolling="no" width="100%" height="100"></iframe>
 
 <div class="findPass">
-        <form name="findPassForm" action="" method="post">
+        <form name="findPassForm" action="findPass_proc.jsp" method="post">
             <h1 class="logo_name">campYo</h1>
                 <ul class="top">
                     <li>
                         <label>이름*</label>
-                        <input name="name" type="text" id="name">
+                        <input name="user_name" type="text" id="name">
                     </li>
                     <li>
                         <label>아이디*</label>
-                        <input name="ia" type="text" id="id">
+                        <input name="user_id" type="text" id="id">
                     </li>
                     
                     <li>
@@ -39,7 +39,7 @@
                     <li>
                         <label>이메일*</label>
                         <input name="email1" type="email" id="email1" class="email1"> @
-                        <input name="eamil2" type="email" id="email2" class="email2">
+                        <input name="email2" type="email" id="email2" class="email2">
                         <select class="email3" id="email3" onchange="emailCheck()">
                             <option value="choice">선택</option>
                             <option value="naver.com">naver.com</option>
