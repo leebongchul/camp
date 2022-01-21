@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import = "com.camp.dto.noticeDTO,com.camp.dao.noticeDAO, java.util.ArrayList"%>
+    <%
+        noticeDAO dao = new noticeDAO();
+        ArrayList<noticeDTO> list = dao.noticSelect(); 
+    %>
 <!DOCTYPE html>
 <html>
 <head>

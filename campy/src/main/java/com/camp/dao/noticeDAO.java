@@ -27,6 +27,7 @@ public class noticeDAO extends DBconn {
         System.out.println(result);
         return result;
     }
+    // 공지사항불러오기.
 
     public ArrayList<noticeDTO> noticSelect() {
         ArrayList<noticeDTO> list = new ArrayList<noticeDTO>();
