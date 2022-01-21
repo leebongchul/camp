@@ -4,7 +4,7 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 <jsp:useBean id="dto"  class="com.camp.dto.noticeDTO"></jsp:useBean>
-<jsp:setProperty name="vo" property="*" />
+<jsp:setProperty name="dto" property="*" />
 
 <%
     noticeDAO dao = new noticeDAO();

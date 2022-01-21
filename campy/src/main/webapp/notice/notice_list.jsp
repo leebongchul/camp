@@ -13,7 +13,7 @@
 
         <ul>
             <!-- 게시판 제목  -->
-            <li>공지사항</li>
+            <li class="notice_list_title">공지사항</li>
 
     <div id="mainWrapper">
                         <a href="notice_write.jsp"><button type="button" class="btn_style3">글쓰기</button></a>
