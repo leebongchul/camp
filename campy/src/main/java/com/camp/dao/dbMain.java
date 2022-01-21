@@ -11,7 +11,8 @@ public class dbMain {
         myPageDAO mdao = new myPageDAO();
         noticeDAO ndao = new noticeDAO();
 
-        ndao.noticSelect();
+        // ndao.noticSelect();
+        // ndao.noticSelect();
 
     }
 

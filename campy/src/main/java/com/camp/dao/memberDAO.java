@@ -98,10 +98,10 @@ public class memberDAO extends DBconn {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        for (int i = 0; i < list.size(); i++) {
-
-            System.out.println(list.get(i).getUser_id());
-        }
+//        for (int i = 0; i < list.size(); i++) {
+//
+//            System.out.println(list.get(i).getUser_id());
+//        }
         return list;
     }
 

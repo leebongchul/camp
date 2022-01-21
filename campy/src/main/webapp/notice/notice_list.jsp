@@ -32,49 +32,20 @@
                             <li>제목</li>
                             <li>작성일</li>
                             <li>작성자</li>
-                            <li>조회수</li>
                         </ul>
                     </li>
                     <!-- 게시물이 출력될 영역 -->
+                    <%for(noticeDTO dto : list) {%>
                     <li>
                         <ul>
-                            <li>1</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
+                            <li><%=dto.getNotice_num() %></li>
+                            <li class="left"><%=dto.getNotice_tittle() %></li>
+                            <li><%=dto.getNotice_regdate() %></li>
+                            <li><%=dto.getNotice_writer() %></li>
+                     
                         </ul>
                     </li>
-
-                    <li>
-                        <ul>
-                            <li>2</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <ul>
-                            <li>3</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <ul>
-                            <li>4</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
-                    <li>                                        
+                        <%} %>
                 </ul>
             </li>
 
