@@ -25,7 +25,8 @@
     	//재설정 실패
     	%>
     	<script>
-    	   alert("비밀번호 재설정 실패!")
+    	   alert("비밀번호 재설정 실패!");
+    	   history.back();
     	</script>
     	<%    	
     }
