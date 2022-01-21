@@ -30,7 +30,7 @@
                     </tr>               
                     <tr>                    
                         <td colspan="2">
-                            <button type="button" class="btn btn-primary btn-md center-block" onclick="qna_FormCheck()">등록완료</button>
+                            <input type="button" value="등록" onclick="qna_FormCheck()">
                             <a href="qna_list.jsp">
                                 <button type="button" class="btn btn-danger btn-md center-block">목록</button>
                             </a>
