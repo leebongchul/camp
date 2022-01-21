@@ -64,19 +64,19 @@
       <span>예약을 취소하고 싶어요</span>
      </div>
      <div class="anw">
-      <span>취소하세요</span>
+      <span>예약한 캠핑장에 연락하세요</span>
      </div>
       <div class="que">
       <span>환불하고 싶어요</span>
      </div>
      <div class="anw">
-      <span>환불하세요</span>
+      <span>해당 캠핑장에 연락하세요</span>
      </div>
       <div class="que">
-      <span>This is third question.</span>
+      <span>모르겠어요</span>
      </div>
      <div class="anw">
-      <span>This is third answer.</span>
+      <span>ㅠㅠㅠㅠ</span>
      </div>
 </div>
 
