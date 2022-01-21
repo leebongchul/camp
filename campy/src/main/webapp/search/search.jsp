@@ -15,7 +15,7 @@
         <ul>
             <li>
                 <input type="text" placeholder="캠핑장명 입력" name="search_camp">
-                <button type="button">검색</button>
+                <button type="button">검색창</button>
             </li>
             <li class="search_">
                <input type="radio" name="local" id="">전체

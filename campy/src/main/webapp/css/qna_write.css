@@ -1,0 +1,40 @@
+
+    /*버튼 */
+     h1{display: table;
+     margin-top:-5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    color:#BCFF66; font-size:50px; font-family:dotum;}
+    .qna_write {width: 300px;
+            margin : 0 auto;
+            margin-top:-30px;
+            background:white;}
+    
+    .btn_style4 {   
+        display:inline-block;
+        font-size:10pt;
+        font-weight:700;
+        width:100px;
+        padding:8px 0;
+        background:#BCFF66;
+        color:white;
+        border:1px solid white;
+        outline:1px double #BCFF66;
+        margin-left:540px;
+        border-radius:5px;
+    }
+    .btn_style5 {   
+        display:inline-block;
+        font-size:10pt;
+        font-weight:700;
+        width:100px;
+        padding:8px 0;
+        background:#BCFF66;
+        color:white;
+        border:1px solid white;
+        outline:1px double #BCFF66;
+        border-radius:5px;
+    }
+    .content .qna_write td .qtitle{width:700px; height:27px;}
+    .content .qna_write td .qcontents{width:700px; height:300px;}

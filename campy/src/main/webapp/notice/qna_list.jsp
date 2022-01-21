@@ -67,6 +67,9 @@
                             <li>빈</li>
                             <li>0</li>
                         </ul>
+                        <a href="qna_write.jsp"><button type="button" class="btn btn-primary btn-md center-block">글쓰기</button></a>
+                        <a href="qna_update.jsp"><button type="button" class="btn btn-danger btn-md center-block">수정</button></a>
+                        <a href="qna_delite.jsp"><button type="button" class="btn btn-danger btn-md center-block">삭제</button></a>
                     <li>                                        
                 </ul>
             </li>
