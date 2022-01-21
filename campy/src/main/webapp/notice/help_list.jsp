@@ -61,22 +61,25 @@
 
 <div id="Accordion_wrap">
      <div class="que">
-      <span>예약을 취소하고 싶어요</span>
+      <span>예약변경 가능한가요?</span>
      </div>
      <div class="anw">
-      <span>예약한 캠핑장에 연락하세요</span>
+      <span>예약변경은 불가합니다. 취소 후 재예약 부탁드립니다.</span>
      </div>
       <div class="que">
-      <span>환불하고 싶어요</span>
+      <span>환불은 언제되나요?</span>
      </div>
      <div class="anw">
-      <span>해당 캠핑장에 연락하세요</span>
+      <span>    
+        환불은 7~10일정도 소요 되오니 양해 부탁드립니다.
+
+        (주말이나 공휴일 포함시 소요시간이 늘어날 수 있습니다.)</span>
      </div>
       <div class="que">
-      <span>모르겠어요</span>
+      <span>예약금 입금은 언제까지인가요?</span>
      </div>
      <div class="anw">
-      <span>ㅠㅠㅠㅠ</span>
+      <span>최소 입실 2일전까지 입금(미입금시 예약취소) 부탁드립니다.</span>
      </div>
 </div>
 
