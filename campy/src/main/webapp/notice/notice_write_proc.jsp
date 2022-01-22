@@ -7,9 +7,14 @@
 <jsp:setProperty name="dto" property="*" />
 
 <%
+    
+    String lid = (String)session.getAttribute("lid");
     noticeDAO dao = new noticeDAO();
+    dto.setNotice_writer(lid);
     int result = dao.Insert(dto);
     if(result == 1){
+        response.sendRedirect("notice_list.jsp");
+    }else{
         response.sendRedirect("notice_list.jsp");
     }
 %>    

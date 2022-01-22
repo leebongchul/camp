@@ -16,7 +16,7 @@
    
    if(result==1){
        //로그인아이디와 입력한 비번 일치 
-       memberDAO pdao = new memberDAO();
+       memberDAO pdao = new memberDAO();//이거 의미없는데 뭔짓한거임?
        dto.setUser_pass(dto.getNext_pass());
        int pass_result = pdao.PassUpdate(dto);
        System.out.println(dto.getUser_id());

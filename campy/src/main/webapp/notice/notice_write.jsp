@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>공지사항 글쓰기</title>
 <link href="../css/notice_write.css" rel="stylesheet">
-<script src="js/notice.js"></script>
+<script src="../js/notice.js"></script>
 </head>
 <body>
 
@@ -14,18 +14,18 @@
     <div class="content">
         <section class="notice">
             <h1>공지사항</h1>
-            <form name="notice_Form" action="notice_write_proc.jsp" method="post"> 
+            <form name="noticeWriteForm" action="notice_write_proc.jsp" method="post"> 
                 <table class="notice_write">
                     <tr>                    
                         <th>제목</th>
                         <td>
-                            <input type="text" name="ntitle" id="ntitle" class="ntitle">
+                            <input type="text" name="notice_tittle" id="ntitle" class="ntitle">
                         </td>                   
                     </tr>
                     <tr>                    
                         <th>내용</th>
                         <td>
-                            <input type="text" name="contents" id="contents" class="contents">
+                            <input type="text" name="notice_content" id="contents" class="contents">
                         </td>                   
                     </tr>               
                     <tr>                    

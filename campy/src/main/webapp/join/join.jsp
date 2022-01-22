@@ -33,21 +33,21 @@
                 <ul class="top">
                     <li>
                         <label>아이디*</label>
-                        <input name="user_id" type="text" id="id">
+                        <input name="user_id" type="text" id="id" maxlength="12" style='ime-mode:disabled;'>
                         <button type="button" class="btn_style1" id="idcheckcnt" onclick="id_overlap_check()">중복확인</button>
                     </li>
                     <li>   
                         <label>비밀번호*</label>
-                        <input name="user_pass" type="password" id="pass">
+                        <input name="user_pass" type="password" id="pass"maxlength="16" >
                     </li>
                     <li>
                         <label>비밀번호확인*</label>
-                        <input name="cpass" type="password" id="cpass" onblur="passCheck()">
+                        <input name="cpass" type="password" id="cpass" maxlength="16" onblur="passCheck()">
                         <span id="pass_msg" class="pass_msg"></span>
                     </li>
                     <li>
                         <label>이름*</label>
-                        <input name="user_name" type="text" id="name">
+                        <input name="user_name" type="text" id="name"maxlength="5">
                     </li>
                     <li>
                        <label>핸드폰번호*</label>

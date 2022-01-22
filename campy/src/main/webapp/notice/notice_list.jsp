@@ -3,7 +3,8 @@
     import = "com.camp.dto.noticeDTO,com.camp.dao.noticeDAO, java.util.ArrayList"%>
     <%
         noticeDAO dao = new noticeDAO();
-        ArrayList<noticeDTO> list = dao.noticSelect(); 
+        ArrayList<noticeDTO> list = dao.noticSelect();
+         //String lid = (String)session.getAttribute("lid");
     %>
 <!DOCTYPE html>
 <html>
@@ -13,6 +14,7 @@
 <link href="../css/notice_list.css" rel="stylesheet">
 <link href="../css/campyo.css" rel="stylesheet">
 <script src="js/camp.js"></script>
+<script src="../js/notice.js"></script>
 </head>
 <body>
 
@@ -21,7 +23,7 @@
             <li class="notice_list_title">공지사항</li>
 
     <div id="mainWrapper">
-                        <a href="notice_write.jsp"><button type="button" class="btn_style3">글쓰기</button></a>
+             <button type="button" class="btn_style3" onclick="notice_AdminCheck('${lid}');">글쓰기</button>
  
             <!-- 게시판 목록  -->
             <li>
@@ -38,7 +40,7 @@
                     <%for(noticeDTO dto : list) {%>
                     <li>
                         <ul>
-                            <li><%=dto.getNotice_num() %></li>
+                            <li><%=dto.getNotice_num()%> </li>
                             <li class="left"><%=dto.getNotice_tittle() %></li>
                             <li><%=dto.getNotice_regdate() %></li>
                             <li><%=dto.getNotice_writer() %></li>
@@ -77,5 +79,8 @@
 
         </ul>
     </div>
+    <script>
+    
+    </script>
 </body>
 </html>

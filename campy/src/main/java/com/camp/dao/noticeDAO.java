@@ -7,17 +7,22 @@ import com.camp.dto.noticeDTO;
 public class noticeDAO extends DBconn {
 
     public int Insert(noticeDTO dto) {
+        System.out.println("진입");
+        // String ntnum = ntcnumCount();
         int result = 0;
-        String sql = "insert into notice values(?,?,?,?,sysdate,?,sysdate)";
-        String ntnum = dto.getNotice_num();
+        String sql = "insert into notice values(nt_seq.NEXTVAL,?,?,?,sysdate,?,sysdate)";
         // String ntnum = dto.ge
+        dto.setNotice_updater(dto.getNotice_writer());
+        String udater = dto.getNotice_updater();
+        System.out.println(udater);
         getPreparedStatement(sql);
         try {
-            pstmt.setInt(1, Integer.parseInt(ntnum + 1));
-            pstmt.setString(2, dto.getNotice_tittle());
-            pstmt.setString(3, dto.getNotice_content());
-            pstmt.setString(4, dto.getNotice_writer());
-            pstmt.setString(5, dto.getNotice_updater());
+            System.out.println(dto);
+            System.out.println("try");
+            pstmt.setString(1, dto.getNotice_tittle());
+            pstmt.setString(2, dto.getNotice_content());
+            pstmt.setString(3, dto.getNotice_writer());
+            pstmt.setString(4, dto.getNotice_updater());
             result = pstmt.executeUpdate();
 
             close();
@@ -37,8 +42,8 @@ public class noticeDAO extends DBconn {
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 noticeDTO dto = new noticeDTO();
-                int ntnum = rs.getInt(1);
-                dto.setNotice_num(Integer.toString(ntnum));
+
+                dto.setNotice_num(rs.getInt(1));
                 dto.setNotice_tittle(rs.getString(2));
                 dto.setNotice_content(rs.getString(3));
                 dto.setNotice_writer(rs.getString(4));

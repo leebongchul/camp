@@ -105,7 +105,7 @@ public class memberDAO extends DBconn {
         return list;
     }
 
-    // 비밀번호 수정전 정보 체크
+    // 비밀번호 수정전 정보 체크uj
     public int getPassCheck(memberDTO dto) {
         int result = 0;
         String sql = "select count(*) from member where user_id = ? and user_name = ? and user_tel = ? and user_email = ? and user_exityn = 'y'";
