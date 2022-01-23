@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import = "com.camp.dto.qnaDTO,com.camp.dao.qnaDAO, java.util.ArrayList"%>
+    
+    <%
+        qnaDAO dao = new qnaDAO();
+        ArrayList<qnaDTO> list = dao.noticSelect();
+         //String lid = (String)session.getAttribute("lid");
+    %>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,44 +37,19 @@
                         </ul>
                     </li>
                     <!-- 게시물이 출력될 영역 -->
+                    <!-- 게시물이 출력될 영역 -->
+                    <%for(qnaDTO dto : list) {%>
                     <li>
                         <ul>
-                            <li>1</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
+                            <li><%=dto.getQna_num()%> </li>
+                            <li class="left"><%=dto.getQna_tittle() %></li>
+                            <li><%=dto.getQna_regdate() %></li>
+                            <li><%=dto.getQna_writer() %></li>
+                     
                         </ul>
                     </li>
-
+                        <%} %>
                     <li>
-                        <ul>
-                            <li>2</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <ul>
-                            <li>3</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <ul>
-                            <li>4</li>
-                            <li class="left">제목제목제목제목1</li>
-                            <li>2022.01.11</li>
-                            <li>빈</li>
-                            <li>0</li>
-                        </ul>
                         <a href="qna_write.jsp"><button type="button" class="btn btn-primary btn-md center-block">글쓰기</button></a>
                         <a href="qna_update.jsp"><button type="button" class="btn btn-danger btn-md center-block">수정</button></a>
                         <a href="qna_delite.jsp"><button type="button" class="btn btn-danger btn-md center-block">삭제</button></a>
